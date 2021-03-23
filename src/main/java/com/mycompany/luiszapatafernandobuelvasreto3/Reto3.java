@@ -102,19 +102,19 @@ public class Reto3 {
            
            
            String[] listaStrings = n.split(",");
-           int[] listaEnteros = new int[listaStrings.length];
+           double[] listaEnteros = new double[listaStrings.length];
            for(int i = 0; i < listaStrings.length; i++){
-                listaEnteros[i] = Integer.parseInt(listaStrings[i]);               
+                listaEnteros[i] = Double.parseDouble(listaStrings[i]);               
            }
            System.out.println("\nEl vector formado es: " + Arrays.toString(listaEnteros) + "\n");
            analistaVector(listaEnteros);
 }
            
-           static int[] analistaVector(int[] listaEnteros){
+           static double[] analistaVector(double[] listaEnteros){
                
-           int suma = 0;    
-           int mayor = listaEnteros[0];
-           int menor = listaEnteros[0];
+           double suma = 0;    
+           double mayor = listaEnteros[0];
+           double menor = listaEnteros[0];
            
            for (int j = 0; j < listaEnteros.length; j ++){
                 suma = listaEnteros[j] + suma;
